@@ -1,0 +1,71 @@
+<div class="card" style="width: 18rem;" [ngClass]="food.peppery ? 'peperClass' : '' ">
+    <div class="card_img_top">
+        <img [src]="food.imgSrc" alt="...">
+    </div>
+    <div class="card_body">
+        <h3 class="card_title">{{food.name}}</h3>
+
+
+        <div>
+            <span *ngIf="food.peppery" class="pepClass"> <img src="../../assets/svg/pepper.svg" class="pepper"></span>
+        </div>
+
+
+        <div>
+            <span *ngIf="food.veg" class="vegClass"> <img src="../../assets/svg/leaf.svg" class="leaf">
+            </span>
+        </div>
+
+
+
+        <tr></tr>
+
+      
+
+
+        
+
+
+
+
+        <div class="two_price">
+
+            
+
+            <span *ngIf="!food.sale"> &nbsp;{{food.price | currency: cur}}</span>
+
+            <span *ngIf="food.sale" class="old_price"> {{food.price | currency: cur}} </span>
+
+            <span *ngIf="food.sale" class="new_price"> &nbsp; {{food.price * 0.75 | currency: cur}}</span>
+
+        </div>
+
+
+        <div class="cur_rency">
+
+            <button (click)="curCange()">$-₾</button>
+        </div>
+
+
+
+
+        <div class="twobtt">
+            <!-- <a href="#" class="buy">
+                <button class="buy_btt">buy</button>
+            </a> -->
+            <!-- დეტალების კომპონენტთან ერთად გადაეცემა id-იც ცვლადი იწერება ბრეკეტებში key-ც da value-ც-->
+            <a [routerLink]="['/details', food.id]" style="text-decoration: none; color: black;">მეტის ნახვა</a>
+            <a href="javascript:" class="add_cart">
+
+
+
+                
+                <!-- <button class="add_cart_btt"></button> -->
+                <button (click)="incre()">
+                    <img src="../../assets/svg/cart_icon.png" alt="" class="cart_svg">
+                </button>
+
+            </a>
+        </div>
+    </div>
+</div>

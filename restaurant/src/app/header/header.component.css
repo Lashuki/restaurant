@@ -1,0 +1,245 @@
+@font-face {
+  font-family: dds;
+  src: url(../../assets/PoetsenOne-Regular.ttf);
+}
+
+.active {
+  border-bottom: 2px solid rgb(21,95,53);
+  border-bottom-width: 4px;
+  bottom: 0;
+}
+
+
+.headerClass {
+  background-color: #E9F7EF  ;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 76px 24px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mainSvg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  gap: 5px;
+}
+
+
+.svgClass {
+  width: 66px;
+}
+
+
+
+.search_class {
+  display: flex;
+  gap: 10px;
+}
+
+
+.input_class {
+  border-radius: 5px;
+  max-width: 260px;
+  height: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.web_title {
+  font-size: 26px;
+  color: #566573;
+  font-family: mainfont;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: mainfont;
+  src: url(../../assets/font_for_link.ttf);
+}
+
+@font-face {
+  font-family: laall;
+  src: url(../../assets/geooool.ttf);
+}
+
+
+.navClass {
+  display: flex;
+  gap: 24px;
+  font-family: laall;
+  font-size: 18px;
+  font-weight: 550;
+  list-style: none;
+}
+
+.navClass button {
+  color: #34495E;
+}
+
+
+.contact_us_color {
+  color: white !important;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+.hamburger {
+  height: 36px;
+  width: 36px;
+  transform: 0.2s;
+  position: relative;
+  display: none;
+  align-items: center;
+  text-align: center;
+}
+
+.hamburger .checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
+.line {
+  transition: 0.5s;
+  stroke-width: 6px;
+  stroke: black;
+}
+
+.lineTop {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 25;
+}
+
+.lineBottom {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 60;
+}
+
+.lineMid {
+  stroke-dasharray: 40 40;
+}
+
+.hamburger .checkbox:checked+svg .line {
+  stroke: crimson;
+}
+
+.hamburger .checkbox:checked+svg .lineTop {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(45deg) translate(-7px, -5px);
+}
+
+.hamburger .checkbox:checked+svg .lineMid {
+  stroke-dashoffset: 40;
+}
+
+.hamburger .checkbox:checked+svg .lineBottom {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(-45deg) translate(-5px, 5px);
+}
+
+
+
+.nav_link_class {
+  display: flex;
+
+
+}
+
+
+
+.navClass_for_burger {
+  display: none;
+}
+
+
+.navClass_for_burger {
+  font-family: sevillana;
+  list-style: none;
+  font-size: 16px;
+  background-color:#D4EFDF;
+  border: solid black 1px;
+  padding: 12px;
+  border-radius: 10px;
+  
+}
+
+.navClass_for_burger a {
+  color: darkgreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1246px) {
+  .input_class {
+    border-radius: 5px;
+    max-width: 160px;
+    height: 30px;
+  }
+
+  .contact_us {
+    padding: 6px 12px;
+  }
+}
+
+
+@media screen and (max-width:1018px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navClass {
+    display: none;
+  }
+
+  .navClass_for_burger {
+    display: block;
+  }
+}
+
+
+@media  screen and (max-width:716px) {
+  .hamburger {
+    height: 24px;
+    width: 36px;
+  }
+}
+
+
+@media  screen and (max-width:516px) {
+  .web_title {
+    display: none;
+  }
+}

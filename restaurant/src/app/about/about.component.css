@@ -1,0 +1,58 @@
+.container {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250,229,211);
+        width: 100%;
+        height: 100%;
+    border-radius: 30px;
+    margin-top: 56px;
+
+}
+
+
+.about_us {
+    /* margin-top: 96px; */
+    display: flex;
+    justify-content: center;
+    padding: 64px;
+}
+
+
+.vegetables {
+    width: 196px;
+    /* height: 256px; */
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.about_ul li {
+    list-style-type: circle;
+    margin-top: 20px;
+}
+
+.tree_pc {
+    display: flex;
+    margin-top: 96px;
+    gap: 20px;
+}
+
+
+
+
+@media screen  and (max-width: 856px) {
+    .vegetables {
+        display: none;
+    }
+    .about_ul {
+        margin: auto;
+    }
+
+    .mainTitle {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center; 
+    }
+
+}

@@ -1,0 +1,85 @@
+.contacts {
+    max-width: 1920px;
+    margin: auto;
+
+
+}
+
+.contact_sp {
+    font-size: 36px;
+    margin-top: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkslateblue;
+    font-weight: 700;
+    letter-spacing: 16px;
+}
+
+.map_and_other {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+.contacts_layers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cont {
+    display: flex;
+    flex-direction: column;
+    gap: 116px;
+}
+
+.map_and_other {
+    margin-top: 256px;
+}
+
+img {
+    width: 36px;
+}
+
+.talk_to_us_sp {
+    margin-top: 32px;
+}
+
+/* .email_class {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+} */
+
+.em {
+    margin-bottom: 24px;
+}
+
+
+
+@media screen and (max-width: 1576px) {
+    .map_class {
+        display: none;
+
+    }
+
+    #cont {
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .map_and_other {
+        margin-top: 96px;
+    }
+
+}
+
+
+@media screen and (max-width: 726px) {
+    #cont {
+        flex-direction: column;
+    }
+
+}

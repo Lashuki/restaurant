@@ -1,0 +1,51 @@
+<section class="cart_items">
+
+    <div *ngFor="let item of cart; let i = index">
+
+
+
+
+        <div class="tw_items">
+
+
+            <div class="tw_price">
+
+                <img src="{{item.imgSrc}}" alt="" class="img_class">
+
+
+                <div class="prop">
+
+                    <span>{{item.name}}</span>
+
+                    <span *ngIf="!item.sale">{{item.price |currency: item.currency}}</span>
+
+                    <span *ngIf="item.sale" class="new_price"> &nbsp; {{item.price * 0.75 | currency: item.currency}}</span>
+
+                    <!-- <a (click)="curChange()">btt</a> -->
+
+                </div>
+
+            </div>
+
+
+            
+
+            <button (click)="deleteItem(i)">
+                <span class="button_top"> წაშლა
+                </span>
+              </button>
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+</section>

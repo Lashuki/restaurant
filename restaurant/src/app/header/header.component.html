@@ -1,0 +1,112 @@
+<div class="headerClass">
+
+
+    <button (click)="refresh()">
+
+        <div class="mainSvg">
+
+
+
+            <a routerLink="">
+                <img src="../../assets/svg/mainSvg.svg" alt="" class="svgClass">
+            </a>
+            <span class="web_title">
+                ჩვენი რესტორანი
+            </span>
+
+
+        </div>
+
+    </button>
+
+
+
+
+    <div class="nav_link_class">
+
+
+        <ul class="navClass">
+
+            <li>
+                <button routerLink="" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">მთავარი</button>
+            </li>
+
+            <li>
+                <button routerLink="/about" routerLinkActive="active">ჩვენს შესახებ </button>
+            </li>
+
+            <li>
+                <button routerLink="/cart" routerLinkActive="active">კალათა</button>
+            </li>
+
+            <li>
+                <button routerLink="/contact" routerLinkActive="active">
+                    დაგვიკავშირდით
+                </button>
+            </li>
+
+
+
+
+
+
+        </ul>
+
+
+
+
+
+
+
+
+        <ul class="navClass_for_burger" *ngIf="burgerMenu">
+
+            <li>
+                <a routerLink="">home</a>
+            </li>
+
+            <li>
+                <a routerLink="/about">about us</a>
+            </li>
+
+            <li>
+                <a routerLink="/cart">cart</a>
+            </li>
+
+            <li>
+                <a routerLink="/contact">contact us</a>
+            </li>
+
+
+
+
+
+
+        </ul>
+
+
+
+
+
+
+
+        <div class="hamburger" (click)="bergerB()">
+            <input class="checkbox" type="checkbox" />
+            <svg fill="none" viewBox="0 0 50 50" height="36" width="36">
+                <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black" d="M6 11L44 11">
+                </path>
+                <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 24H43" class="lineMid line">
+                </path>
+                <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 37H43" class="lineBottom line">
+                </path>
+            </svg>
+        </div>
+
+
+
+    </div>
+
+
+
+</div>

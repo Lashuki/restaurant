@@ -1,0 +1,55 @@
+.topClass {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.imdiv {
+    display: flex;
+    justify-content: center;
+}
+
+
+.detCardText {
+    background-color: #F9EBEA;
+    width: 612px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.mainTitl {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+
+
+@font-face {
+    font-family: italicFont;
+    src: url(../../assets/geoFont.ttf);
+}
+
+.imageClass {
+    max-height: 356px;
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin-top: 30px;
+}
+
+.Titl {
+    font-size: 36px;
+    margin-top: 30px;
+    font-family: italicFont;
+}
+
+.mainText {
+    padding: 16px;
+
+}
+
+
